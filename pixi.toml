@@ -22,9 +22,13 @@ patsy = "*"
 pyarrow = "*"
 ipykernel = "*"
 jupyterlab = "*"
+r-rpart = ">=4.1.24,<5"
+"r-rpart.plot" = ">=3.1.3,<4"
 
 [pypi-dependencies]
 palmerpenguins = "*"
+drawdata = ">=0.3.8, <0.4"
 
 [tasks]
 lab = "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.token='' --ServerApp.password=''"
+lab-local = "jupyter lab --ip=127.0.0.1 --port=8888 --no-browser"
